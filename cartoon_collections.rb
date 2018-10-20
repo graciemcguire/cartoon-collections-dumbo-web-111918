@@ -3,7 +3,7 @@ def roll_call_dwarves(dwarfs)
 end
 
 def summon_captain_planet(calls)
- calls.collect { |call| call.capitalize + "!" }  
+ calls.collect { |call| call.capitalize + "!" } 
 end
 
 def long_planeteer_calls(words)
@@ -12,7 +12,5 @@ end
 
 def find_the_cheese(foods)
   cheeses = ["gouda", "cheddar", "camembert"]
-  foods.find do |item|
-  cheeses.include?(item)
-  end 
+  foods.find { |item| cheeses.include?(item) }
 end 
